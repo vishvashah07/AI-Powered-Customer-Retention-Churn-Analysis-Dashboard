@@ -88,9 +88,6 @@ customer-churn-project
 ├── models/                        # Saved trained models
 │   └── churn_model.pkl            # Trained XGBoost churn prediction model
 │
-├── notebooks/                     # Jupyter notebooks for experimentation
-│   └── churn_analysis.ipynb       # Exploratory data analysis and experiments
-│
 ├── src/                           # Core source code
 │   ├── data_preprocessing.py      # Data cleaning and preprocessing
 │   ├── model_training.py          # Training the XGBoost classification model
