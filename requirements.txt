@@ -3,6 +3,7 @@ pandas
 numpy
 matplotlib
 seaborn
+xgboost
 scikit-learn
 python-dotenv
 google-genai
