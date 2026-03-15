@@ -32,7 +32,7 @@ graph TD
 
 1. **Data Ingestion:** Loading the Telecom Customer dataset.
 2. **Preprocessing:** Data cleaning and Feature Engineering.
-3. **Modeling:** Training a Classification Model (e.g., Random Forest) to predict churn.
+3. **Modeling:** Training the Classification Model XGBoost to predict churn.
 4. **Deployment:** Integrating the saved model (`.pkl`) into a Streamlit interface.
 5. **AI Integration:** Utilizing the Gemini API to interpret data trends and suggest improvements.
 
@@ -56,11 +56,11 @@ The system utilizes telecom customer data covering demographics, account informa
 
 ### 1. Customer Analytics Dashboard
 
-Interactive visualizations powered by Plotly/Seaborn to explore:
+Interactive visualizations powered by Matplotlib & Seaborn to explore:
 
 * Churn distribution across different contract types.
 * Correlation between Monthly Charges and Retention.
-* Tenure-based cohorts.
+* Tenure-based analysis.
 
 ### 2. ML Churn Prediction
 
@@ -83,14 +83,25 @@ Integrated with the **Gemini API** to transform raw data into narrative insights
 ```text
 customer-churn-project
 │
-├── app.py                # Main Streamlit application
-├── data/
-│   └── telco_churn.csv   # Raw dataset
-├── models/
-│   └── churn_model.pkl   # Trained Machine Learning model
-├── .env                  # API Key configuration (ignored by git)
-├── requirements.txt      # Project dependencies
-└── README.md             # Project documentation
+├── data/                          # Dataset used for training and analysis
+│
+├── models/                        # Saved trained models
+│   └── churn_model.pkl            # Trained XGBoost churn prediction model
+│
+├── notebooks/                     # Jupyter notebooks for experimentation
+│   └── churn_analysis.ipynb       # Exploratory data analysis and experiments
+│
+├── src/                           # Core source code
+│   ├── data_preprocessing.py      # Data cleaning and preprocessing
+│   ├── model_training.py          # Training the XGBoost classification model
+│   └── prediction.py              # Functions used for churn prediction
+│
+├── app.py                         # Main Streamlit dashboard entry point
+├── dashboard.py                   # Dashboard layout and visualization logic
+│
+├── .env                           # API keys (not pushed to GitHub)
+├── requirements.txt               # Python dependencies
+├── README.md                      # Project documentation
 
 ```
 
@@ -127,7 +138,7 @@ GEMINI_API_KEY=your_api_key_here
 **4. Run the Application**
 
 ```bash
-streamlit run app.py
+streamlit run dashboard.py
 
 ```
 
