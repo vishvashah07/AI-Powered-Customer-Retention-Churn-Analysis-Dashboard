@@ -154,4 +154,4 @@ streamlit run dashboard.py
 
 **Focus:** Information Technology & Data Science
 
-Would you like me to help you draft the `requirements.txt` file or write the Python logic for the Gemini API integration?
+
