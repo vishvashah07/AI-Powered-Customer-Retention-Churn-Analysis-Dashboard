@@ -37,6 +37,34 @@ graph TD
 5. **AI Integration:** Utilizing the Gemini API to interpret data trends and suggest improvements.
 
 ---
+🛠️ Tech Stack
+Machine Learning & Data Science
+Language: Python 3.9+
+
+Model: XGBoost (Extreme Gradient Boosting) for high-performance classification.
+
+Libraries: * Scikit-learn: For data splitting, scaling (StandardScaler), and evaluation metrics.
+
+Pandas & NumPy: For robust data manipulation and numerical processing.
+
+Matplotlib & Seaborn: For exploratory data analysis (EDA).
+
+Generative AI Integration
+Engine: Google Gemini API (google-generativeai).
+
+Function: Automated interpretation of churn trends and natural language generation of business strategies.
+
+Web Frameworks & API
+Frontend: Streamlit (for the interactive dashboard).
+
+Backend: Flask (for the prediction API endpoint).
+
+Environment Management: python-dotenv for secure API key handling.
+
+DevOps & Tools
+Version Control: Git & GitHub.
+
+Serialization: Pickle (for saving the trained model and scaler pipeline).
 
 ## 📊 Dataset & Features
 
