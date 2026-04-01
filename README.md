@@ -61,7 +61,7 @@ This project leverages a modern data science and web stack to deliver high-perfo
 
 ## 🌐 Web Frameworks & API
 * **Frontend Dashboard:** [Streamlit](https://streamlit.io/) — Chosen for its ability to create interactive, data-rich user interfaces with Python.
-* **Backend API:** [Flask](https://flask.palletsprojects.com/) — Provides a lightweight RESTful API for real-time model inference.
+* **Backend API:** [Flask](https://flask.palletsprojects.com/) 
 * **Security:** `python-dotenv` for managing sensitive API credentials locally.
 
 ---
@@ -69,14 +69,9 @@ This project leverages a modern data science and web stack to deliver high-perfo
 ## ⚙️ DevOps & Tools
 * **Version Control:** Git & GitHub for collaborative development and source tracking.
 * **Serialization:** `Pickle` for saving the trained model and preprocessing pipeline (Scaler) to ensure consistency between training and production.
-* **Environment:** Virtual environments (`venv`) to ensure dependency isolation.
+
 
 ---
-
-## 🎯 Why This Stack?
-1. **Performance:** **XGBoost** provides superior accuracy on tabular data compared to standard decision trees.
-2. **Scalability:** The **Flask** backend allows the prediction model to be consumed by other external applications.
-3. **UX:** **Streamlit** transforms a static machine learning script into an interactive business tool that non-technical stakeholders can use.
 ## 📊 Dataset & Features
 
 The system utilizes telecom customer data covering demographics, account information, and service usage.
