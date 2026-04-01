@@ -36,36 +36,47 @@ graph TD
 4. **Deployment:** Integrating the saved model (`.pkl`) into a Streamlit interface.
 5. **AI Integration:** Utilizing the Gemini API to interpret data trends and suggest improvements.
 
+---# 🛠️ Technical Stack
+
+This project leverages a modern data science and web stack to deliver high-performance churn predictions and AI-driven business intelligence.
+
 ---
-🛠️ Tech Stack
-Machine Learning & Data Science
-Language: Python 3.9+
 
-Model: XGBoost (Extreme Gradient Boosting) for high-performance classification.
+## 🧠 Machine Learning & Data Science
+| Technology | Usage |
+| :--- | :--- |
+| **Python 3.9+** | Primary programming language for data pipelines and modeling. |
+| **XGBoost** | High-performance gradient boosting framework used for the core classification model. |
+| **Scikit-Learn** | Used for data splitting, feature scaling (`StandardScaler`), and model evaluation. |
+| **Pandas & NumPy** | Essential libraries for data manipulation, cleaning, and numerical operations. |
+| **Matplotlib & Seaborn** | Powering the exploratory data analysis (EDA) and static visualizations. |
 
-Libraries: 1. Scikit-learn: For data splitting, scaling (StandardScaler), and evaluation metrics.
+---
 
-           2. Pandas & NumPy: For robust data manipulation and numerical processing.
+## 🤖 Generative AI & Intelligence
+* **Engine:** [Google Gemini API](https://aistudio.google.com/app/apikey) (`google-generativeai`)
+* **Role:** Acts as the "Insight Engine," automatically interpreting complex dataset statistics to provide human-readable retention strategies and business recommendations.
 
-           3. Matplotlib & Seaborn: For exploratory data analysis (EDA).
+---
 
-Generative AI Integration(
-Engine): Google Gemini API (google-generativeai).
+## 🌐 Web Frameworks & API
+* **Frontend Dashboard:** [Streamlit](https://streamlit.io/) — Chosen for its ability to create interactive, data-rich user interfaces with Python.
+* **Backend API:** [Flask](https://flask.palletsprojects.com/) — Provides a lightweight RESTful API for real-time model inference.
+* **Security:** `python-dotenv` for managing sensitive API credentials locally.
 
-Function: Automated interpretation of churn trends and natural language generation of business strategies.
+---
 
-Web Frameworks & API:
-Frontend: Streamlit (for the interactive dashboard).
+## ⚙️ DevOps & Tools
+* **Version Control:** Git & GitHub for collaborative development and source tracking.
+* **Serialization:** `Pickle` for saving the trained model and preprocessing pipeline (Scaler) to ensure consistency between training and production.
+* **Environment:** Virtual environments (`venv`) to ensure dependency isolation.
 
-Backend: Flask (for the prediction API endpoint).
+---
 
-Environment Management: python-dotenv for secure API key handling.
-
-DevOps & Tools
-Version Control: Git & GitHub.
-
-Serialization: Pickle (for saving the trained model and scaler pipeline).
-
+## 🎯 Why This Stack?
+1. **Performance:** **XGBoost** provides superior accuracy on tabular data compared to standard decision trees.
+2. **Scalability:** The **Flask** backend allows the prediction model to be consumed by other external applications.
+3. **UX:** **Streamlit** transforms a static machine learning script into an interactive business tool that non-technical stakeholders can use.
 ## 📊 Dataset & Features
 
 The system utilizes telecom customer data covering demographics, account information, and service usage.
